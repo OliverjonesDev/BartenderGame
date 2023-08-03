@@ -10,19 +10,27 @@ public class M_Cocktails : ScriptableObject
     {
         Shake,Stir,Toss
     }
-    public enum RimmedStruct
+    public enum GlassStruct
     {
-        NA,Salted,Sugar
+        Coup,Rocks,Pint,Schooner,HalfPint,Shot
     }
-
-    public MethodStruct method;
-    public GarnishStruct garnish;
-    //Could be broken down into different liquids, using different scriptable objects for these? will think about it.
-    public List<M_Liquid> ingredients;
     public enum GarnishStruct
     {
         LimeWedge,LimeWheel,LemonSlice,PassionFruit,DriedOrange,DriedGrapefruit
     }
+    public enum RimmedStruct
+    {
+        NA,Salt,Sugar
+    }
+
+    public MethodStruct method;
+    public RimmedStruct rim;
+    public GarnishStruct garnish;
+    //Could be broken down into different liquids, using different scriptable objects for these? will think about it.
+    public List<M_Liquid> ingredients;
+    [Header("Measured in CL")]
+    public List<float> amountsOfEachIngredient;
+
     [Range(0,1)]
     public float strength;
 }

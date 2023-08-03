@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5bea0d17c926734cafb98d90bfdbec9, type: 3}
-  m_Name: Cocktail base 1
+  m_Name: Old_Fashioned
   m_EditorClassIdentifier: 
-  name: 
-  method: 2
-  garnish: 0
+  name: Old Fashioned
+  method: 1
+  rim: 0
+  garnish: 4
   ingredients:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  strength: 0
+  - {fileID: 11400000, guid: d3f1f1ec904c0594da75321939ff3df5, type: 2}
+  - {fileID: 11400000, guid: 88bcb3b193edb3143a8432576de7ab1a, type: 2}
+  - {fileID: 11400000, guid: 0e18d7c0168cccf45983a6a7ccd6cd06, type: 2}
+  amountsOfEachIngredient:
+  - 50
+  - 25
+  - 12.5
+  strength: 0.8
